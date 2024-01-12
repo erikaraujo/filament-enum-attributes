@@ -1,0 +1,51 @@
+{
+    "name": "erikaraujo/filament-enum-attributes",
+    "description": "Traits for Enums to allow for using Attributes instead of get methods for Filament enums",
+    "keywords": [
+        "erik araujo",
+        "filament-enum-attributes"
+    ],
+    "homepage": "https://github.com/erikaraujo/filament-enum-attributes",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Erik Araujo",
+            "email": "contact@erikaraujo.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1"
+    },
+    "require-dev": {
+        "larastan/larastan": "^2.8",
+        "laravel/pint": "^1.13",
+        "orchestra/testbench": "^8.18",
+        "phpunit/phpunit": "^10.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "ErikAraujo\\FilamentEnumAttributes\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "ErikAraujo\\FilamentEnumAttributes\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "analyse": "./vendor/bin/phpstan analyse",
+        "pint": "./vendor/bin/pint",
+        "test": "./vendor/bin/phpunit",
+        "test:coverage:html": [
+            "@test --coverage-html reports/test-coverage --coverage-text",
+            "open reports/test-coverage/index.html"
+        ]
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+    }
+}
