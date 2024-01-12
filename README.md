@@ -4,7 +4,7 @@
 [![Total Downloads](https://img.shields.io/packagist/dt/erikaraujo/filament-enum-attributes.svg?style=flat-square)](https://packagist.org/packages/erikaraujo/filament-enum-attributes)
 ![GitHub Actions](https://github.com/erikaraujo/filament-enum-attributes/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+Enum traits to allow the use of attributes in Filament Enums.
 
 ## Installation
 
