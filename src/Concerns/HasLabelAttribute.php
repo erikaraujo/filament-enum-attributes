@@ -13,6 +13,10 @@ trait HasLabelAttribute
 
         $labelClassAttributes = $ref->getAttributes(Label::class);
         if (count($labelClassAttributes) > 0) {
+            if ($labelClassAttributes[0]->newInstance()->translate && function_exists('__')) {
+                return __($labelClassAttributes[0]->newInstance()->label);
+            }
+
             return $labelClassAttributes[0]->newInstance()->label;
         }
 
