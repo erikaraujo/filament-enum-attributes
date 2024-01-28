@@ -49,6 +49,7 @@ enum Suit: string implements HasColor, HasIcon, HasLabel
     #[Icon('heroicon-o-heart')]
     case Hearts = 'hearts';
 
+    #[Description('The upside down black heart.')]
     case Spades = 'spades';
 ```
 
@@ -60,7 +61,18 @@ use ErikAraujo\FilamentEnumAttributes\Attributes\Label;
 use ErikAraujo\FilamentEnumAttributes\Concerns\HasColorAttribute;
 use ErikAraujo\FilamentEnumAttributes\Concerns\HasIconAttribute;
 use ErikAraujo\FilamentEnumAttributes\Concerns\HasLabelAttribute;
+use ErikAraujo\FilamentEnumAttributes\Concerns\HasDescriptionAttribute;
 ```
+
+You can also pass a boolean `translate` param to both the `Label` and `Description` attributes if you want to translate the string using the laravel helper.
+So, the following:
+
+```php
+#[Description('descriptions.suits.spades')]
+```
+
+Will be evaluated as `__('descriptions.suits.spades')`.
+
 
 ### Testing
 
