@@ -22,6 +22,7 @@ First, you need to import and use the `Enum` traits in your Filament enum class:
 use HasColorAttribute;
 use HasIconAttribute;
 use HasLabelAttribute;
+use HasDescriptionAttribute;
 ```
 
 Now, instead of coding the default filament `get` methods (`getColor()`, `getIcon()` and `getLabel()`) as per the documentation, you may simply use the `#[Color]`, `#[Icon]` and `#[Label]` attributes in your enum cases.
@@ -29,11 +30,12 @@ Now, instead of coding the default filament `get` methods (`getColor()`, `getIco
 See example below:
 
 ```php
-enum Suit: string implements HasColor, HasIcon, HasLabel
+enum Suit: string implements HasColor, HasIcon, HasLabel, HasDescription
 {
     use HasColorAttribute;
     use HasIconAttribute;
     use HasLabelAttribute;
+    use HasDescriptionAttribute;
 
     #[Color(['gray', 'warning'])]
     case Clubs = 'clubs';
