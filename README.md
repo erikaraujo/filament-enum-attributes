@@ -94,15 +94,6 @@ composer test:coverage:html
 
 Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
-### Security
-
-If you discover any security related issues, please email contact@erikaraujo.com instead of using the issue tracker.
-
-## Credits
-
--   [Erik Araujo](https://github.com/erikaraujo)
--   [All Contributors](../../contributors)
-
 ## License
 
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
