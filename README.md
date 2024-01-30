@@ -25,6 +25,12 @@ use HasLabelAttribute;
 use HasDescriptionAttribute;
 ```
 
+Or you can import all traits by simply doing:
+
+```php
+use HasFilamentEnumAttributes;
+```
+
 Now, instead of coding the default filament `get` methods (`getColor()`, `getIcon()` and `getLabel()`) as per the documentation, you may simply use the `#[Color]`, `#[Icon]` and `#[Label]` attributes in your enum cases.
 
 See example below:
